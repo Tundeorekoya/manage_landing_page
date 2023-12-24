@@ -7,3 +7,9 @@ navToggle.addEventListener("click", () => {
     : navToggle.setAttribute("aria-expended", true);
   primaryNav.toggleAttribute("data-visible");
 });
+
+
+  const slider = new A11YSlider(document.querySelector('.slider'), {
+    adaptiveHeight: true,
+    dots: false
+  });
