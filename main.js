@@ -9,7 +9,19 @@ navToggle.addEventListener("click", () => {
 });
 
 
-  const slider = new A11YSlider(document.querySelector('.slider'), {
+  const slider = new A11YSlider(document.querySelector(".slider"), {
     adaptiveHeight: true,
-    dots: false
+    dots: true,
+    arrows: false,
+    responsive: {
+      1280: {
+        slidesToShow: 4,
+        arrows: true
+      },
+      480: {
+        slidesToShow: 1,
+        dots: true,
+        arrows: false
+      },
+    },
   });
