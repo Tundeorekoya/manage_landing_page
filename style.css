@@ -275,6 +275,36 @@ select {
     width: 37%;
   }
 }
+.hero__image {
+  /* position: relative; */
+}
+@media (max-width: 50em) {
+  .hero__image {
+    order: -1;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+}
+.hero__image::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 85%;
+  max-height: 70vh;
+  max-height: 70dvh;
+  aspect-ratio: 1 / 1.2;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-position: bottom left;
+}
+@media (min-width:50em){
+  .hero__image::before{
+    width: 48%;
+  }
+}
 /* utility classes */
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -300,6 +330,11 @@ select {
 }
 .text-neutral-900 {
   color: var(--clr-neutral-900);
+}
+@media (max-width: 47em) {
+  .text-center-sm-only {
+    text-align: center;
+  }
 }
 .bg-primary-400 {
   background-color: var(--clr-accent-400);
