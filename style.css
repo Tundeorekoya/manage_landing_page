@@ -324,6 +324,38 @@ select {
     width: 45%;
   }
 }
+.sales-point {
+  position: relative;
+}
+@media (max-width:47em){
+  .sales-point::before {
+   content: url("images/bg-tablet-pattern.svg");
+  zoom: 40%;
+  position: absolute;
+  z-index: -1;
+  left: 80%;
+  bottom: -90%;
+  width: 200px;
+  height: 85vh;
+}
+
+}
+.sales-point_bg {
+  position: relative;
+}
+@media (min-width:50em) {
+    .sales-point_bg::before {
+    content: url("images/bg-tablet-pattern.svg");
+    zoom: 65%;
+    position: absolute;
+    z-index: -1;
+    left: -45%;
+    top: 50%;
+    width: 100px;
+  }
+
+}
+
 /* utility classes */
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -649,7 +681,6 @@ form p {
     content: "";
     position: absolute;
     inset: 0;
-
   }
   .nav-list {
     display: grid;
