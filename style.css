@@ -579,7 +579,7 @@ body {
   .primary-footer-wrapper > :nth-child(3) {
     grid-area: footer-cover;
   }
-  .footer-nav .flow {
+  .footer-nav{
     margin: 2em;
   }
   .footer-cover {
@@ -616,7 +616,7 @@ body {
 /* footer section */
 .footer-nav {
   columns: 2;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .footer-nav a {
   text-decoration: none;
